@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+		
+	</head>
+	<body>
+
+		
+		<script type="text/javascript">
+			
+				var url='http://v.juhe.cn/weather/index?format=2&cityname=%E4%BD%B3%E6%9C%A8%E6%96%AF&key=89d1bf67f2e33d9c9d9aaa0da3cd1d2d';
+				$.ajax({
+					type:"get",
+					url:url,
+					dataType:'jsonp',
+			//		async:true,
+//					data:{location:city},
+					success:function(data){
+						console.log(data);
+					}
+					});
+					
+		</script>
+	</body>
+</html>

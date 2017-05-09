@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹幕墙</title>
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" >		
+		<style>
+			.screen{
+				height: 600px;
+				width: 98%;
+				border: 3px solid #808080;
+				margin-top: 20px;
+			}
+			span{
+				font-size: 25px;
+				font-weight: bold;
+				position: relative;						
+			}
+			#shootScreen{				
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class=" container screen" id="shootScreen" >
+		</div>
+		<div class="container text-center">
+			
+				
+				
+			
+			<input id="T" type="text" placeholder="请输入弹幕" class="form-control container" onclick="clearHolder()" style="width: 300px; margin: 20px auto 10px auto;"/>
+			<button class="btn btn-success" onclick="shoot()">发射弹幕!!!</button>
+			<button class="btn btn-danger" onclick="clearspan()">清除弹幕</button>
+			
+		</div>
+		
+		
+		
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			/*function clearHolder(){
+				var x=document.getElementById("T");
+				x.placeholder="";
+			}*/
+			function shoot(){				
+				var x=document.getElementById("T"); //获取输入框				
+				var sscreen=document.getElementById("shootScreen");//获取屏幕ID
+				var newspan=document.createElement("span"); //创建一个新的span元素
+				newspan.innerHTML=x.value; //将获取到的input内的值 赋值给新创建的span的innerHtml
+				//生成R G B三个值
+				var colorR=Math.ceil(Math.random()*255);
+				var colorG=Math.ceil(Math.random()*255);
+				var colorB=Math.ceil(Math.random()*255);
+				colorR=colorR.toString(16);
+				colorG=colorG.toString(16);
+				colorB=colorB.toString(16);				
+				var Tcolor="#"+colorR+colorG+colorB;//组合RGB三个值，生成颜色代码
+				newspan.style.color=Tcolor;//将生成的颜色给newspan
+				newspan.style.left=1800+"px";//给新span一个初始的left值				
+				var i=Math.ceil(Math.random()*50);
+				newspan.style.top=10*i+"px";				
+				sscreen.appendChild(newspan);	//在屏幕中插入newspan内容	233333	
+				//获取屏幕可视宽度
+				var Twidth=document.body.offsetWidth;
+				setInterval(function (){					
+						Twidth-=2;
+						newspan.style.left=Twidth+"px";						
+				},10);					
+				x.value="";
+				x.placeholder="请输入弹幕";
+			}
+			function clearspan(){
+				var x=document.getElementsByTagName("span");
+				for(var i=0;i<x.length;i++){
+					x[i].innerHTML=null;
+					
+				}
+			}
+		</script>
+	</body>
+</html>

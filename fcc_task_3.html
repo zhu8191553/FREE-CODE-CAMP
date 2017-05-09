@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹幕</title>
+		<link rel="stylesheet" href="css/task_3.css" />
+	</head>
+	<body>
+		<div id="dmscreen">
+			
+		</div>
+		<div class="btn">
+		<div class="txt">
+			<input type="text" placeholder="想吐槽啥就输入啥"/ id="txt1">
+			</div>
+		<div class="shoot">
+			<button type="submit" name="吐槽" onclick="shoot()">吐槽</button>
+		</div>
+		<div class="reSet">
+			<button type="reset" name="重置"  onclick="reset()">重置</button>
+		</div>
+		
+		</div>
+		<script type="text/javascript">
+			
+			function shoot() {
+				var oTxt=document.getElementById('txt1');               //获取输入文本框
+				var nSpan=document.createElement('span');				//创建一个新的SPAN元素
+				var oScreen=document.getElementById('dmscreen');		//获取弹幕屏幕
+				nSpan.innerHTML=oTxt.value;								
+				oScreen.appendChild(nSpan);	//把文本框的内容赋值给SPAN并且在屏目中显示
+				var colorR=Math.ceil(Math.random()*255);
+				var colorG=Math.ceil(Math.random()*255);
+				var colorB=Math.ceil(Math.random()*255);
+				colorR=colorR.toString(16);
+				colorG=colorG.toString(16);
+				colorB=colorB.toString(16);				
+				var Tcolor="#"+colorR+colorG+colorB;//组合RGB三个值，生成颜色代码
+				nSpan.style.color=Tcolor;//将生成的颜色给newspan
+				nSpan.style.left=1350+"px";
+				var i=Math.ceil(Math.random()*50);
+				nSpan.style.top=i*5+"px";								//声明一个随机整数i
+				setInterval(nSpanleft,30);
+				var Twidth=1300;
+				function nSpanleft(){
+						Twidth-=2;
+						nSpan.style.left=Twidth+"px";
+				}
+				oTxt.value="";
+			}
+			function reset(){
+				var x=document.getElementsByTagName('span');
+				for(var i=0;i<x.length;i++){
+					x[i].innerHTML=null;
+				}
+			}
+			
+		</script>
+	</body>
+</html>

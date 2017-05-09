@@ -1,0 +1,48 @@
+#dmscreen{
+	width: 1280px;  height: 500px;  border: 2px solid #B0AFAF;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.btn{position: relative;}
+.shoot button{
+	position: absolute;
+	width: 100px;height: 40px;
+	left:740px;
+	top: 23px;border: solid 0px;
+	background-color: #EE6E53;
+	font-size: 15px;color: #FFFFFF;
+	border-radius: 10px;
+	outline: none;
+	cursor:pointer;
+}
+span{
+	position: relative;
+	font-size: 22px;
+}
+.reSet button:hover{
+	background-color: #01BEEF;
+}
+.reSet button:active{background-color: #2189BF;}
+
+.shoot button:hover{
+	background-color: #D04A36;
+}
+.shoot button:active{background-color: #CE343C;}
+.reSet button{position: absolute;
+	width: 100px;height: 40px;
+	left: 855px;
+	top: 23px;
+	font-size: 15px;color: #FFFFFF;
+	border: solid 0px;
+	background-color: #7FCBEF;
+	border-radius: 10px;
+	outline: none;
+	cursor:pointer;
+}
+.txt input{
+	position: absolute;top: 20px;
+	height: 40px;font-size: 18px;
+	left: 500px;
+	border-radius: 10px;
+	outline: none;
+}

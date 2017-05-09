@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Random Quote Machine</title>
+		<!--设置响应式，根据屏幕的宽度来给对应的网页设置宽度，约束缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<script src="http://code.jquery.com/color/jquery.color-2.1.2.js"      <!--jqcolor插件-->
+  integrity="sha256-1Cn7TdfHiMcEbTuku97ZRSGt2b3SvZftEIn68UMgHC8="
+  crossorigin="anonymous"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<script src="js/myapi.js"></script>
+		<style type="text/css">
+			#main{
+				position: absolute;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				width: 550px;
+			}
+			#box{
+				background-color: #FFFFFF;
+				border-radius: 5px;
+				width: 550px;
+				padding: 20px 50px 20px 50px;	
+				margin-bottom: 10px;			
+			}
+			body{
+				background-color: #383D4E;
+			}
+			#text span{
+				font-size:25px ;
+				
+			}
+			#text b{
+				font-size: 15px;
+			} 
+			#text{
+				margin-bottom: 10px;
+			}
+			#btn img{
+				height: 30px;
+				width: 30px;
+			}
+			#btn button{
+				background-color: #383D4E;
+				color: #FFFFFF;
+			}
+			#author{
+				height: 30px;
+				margin-top: 10px;
+			}
+			#by a{
+				color: #FFFFFF;
+				text-decoration: none;	
+			}
+		</style>
+	</head>
+	<body>
+		<!--固定布局-->
+		
+			<div  id="main">
+			<div id="box">
+				<div class="text-info" id="text">
+					<span id="quote"></span>
+					<div id="author">
+						<span class="pull-right">-<b id="author1"></b></span>
+					</div>
+				</div>
+				<div id="btn">
+					<a href=""><img src="img/Twitter1.png"/></a> 
+					<button class="btn btn-sm pull-right"  >新的名言</button>
+				</div>
+			</div>
+				<p class="text-center" id="by"><a href="">by musashi</a></p>		
+		</div>
+	
+	</body>
+</html>

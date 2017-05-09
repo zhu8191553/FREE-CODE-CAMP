@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天气预告</title>
+		<!--设置响应式，根据屏幕的宽度来给对应的网页设置宽度，约束缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fcctask_5.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			#logo{
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+			#logo img{
+				display: block;
+				margin-left: 36%;
+				margin-right: 15px;
+			}
+			#logo span{
+				font-size: 32px;
+				display: block;
+				margin-top: 7px;
+				color: #99CDFF;
+			}
+			#section1{
+				border-top: solid 2px #CCCCCC;
+				border-bottom: solid 2px #CCCCCC;
+				text-align: center;
+			}
+			#section1 p{
+				padding-top:10px ;
+				line-height: 30px;
+			}
+			#section2{
+				text-align: center;
+			}
+			.header{
+				width: 100%;
+			}
+			#theTime{
+				color: paleturquoise;
+				margin-top: 10px;
+				float: right;
+				font-size: 20px;
+			}
+			.col-lg-2{
+				margin-top: 10px;
+				border-top:1px solid #C0C0C0;
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body ng-app="Weather">
+		<div class="header">
+				<div class="container">
+					<b id="theTime"></b>
+				</div>
+		</div>
+		<div class="container">
+			<div id="logo">
+				<img class="pull-left" src="https://www.juhe.cn/themes/v5/public/images/loginlogo.png"/><span class="pull-left">天气预告</span>
+			<div class="clearfix"></div>
+			</div>
+			<div id="section1">
+				<b></b>
+				<h3>今天天气</h3>
+				<b></b>
+				<p>湿度：<b></b></p>
+				<p>穿衣指数：<b></b></p>
+				<p>洗车指数：<b></b></p>
+				<p>旅行指数：<b></b></p>
+				<p>锻炼指数：<b ></b></p>
+				<p>紫外线指数：<b ></b></p>
+			</div>
+			<div id="section2">
+				<h3>近六天天气</h3>
+				<div  class="col-lg-2">
+					<h4>明天</h4>
+					<b id="future1">
+						
+					</b>
+				</div>
+				<div  class="col-lg-2">
+					<h4>后天</h4>
+					<b id="future2"> 
+					</b>
+				</div>
+				<div  class="col-lg-2">
+					<h4>大后天</h4>
+					<b id="future3">
+					
+					</b>
+				</div>
+				<div  class="col-lg-2">
+					<h4>下周一</h4>
+					<b id="future4">
+					</b>
+				</div>
+				<div  class="col-lg-2">
+					<h4>下周二</h4>
+					<b id="future5">					
+					</b>
+				</div>
+				<div  class="col-lg-2">
+					<h4>下周三</h4>
+					<b id="future6">
+					</b>
+				</div>	
+			</div>
+		</div>
+
+	</body>
+</html>
