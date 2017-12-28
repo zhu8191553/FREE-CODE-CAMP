@@ -179,6 +179,11 @@ cursor: pointer;
 	margin-right: 40px;
 	border-radius: 10px;
 }
+#left_2_314 img:hover,
+#left_1_314 img:hover {
+	transition: 1s;
+	transform:scale(1.5,1.5); 
+}
 .fuwu_jumu_314 img {
 	width: 100%;
 }
