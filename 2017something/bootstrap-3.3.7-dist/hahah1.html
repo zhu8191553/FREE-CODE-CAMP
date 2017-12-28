@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aaa</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+.sec_left_314{
+	height: 400px;
+	width: 1000px;
+	background: #242323;
+	color: white;
+	padding: 10px;
+}
+.sec_left_314{
+	left: 50px;
+	width:1000px;
+}
+#cl_314 button{
+border: none;
+float: left;
+color: white;
+font-size: 20px;
+height: 40px;
+line-height: 40px;
+cursor: pointer;
+ background: gray;
+ width: 120px;
+ margin-right: 20px;
+}
+#cl_314 .active_314{
+	background-color: #fff;
+	color: #242323;
+}
+#left_1_314 a,
+#left_2_314 a{
+	color: white;
+	text-decoration: none;
+}
+#left_1_314 a:hover,
+#left_2_314 a:hover
+{
+	color:#ED6300;
+	border-bottom: solid 1px #ED6300;
+}
+
+
+#left_1_314,
+#left_2_314{
+	position: absolute;
+	top: 55px;
+	left: 20px;
+	line-height: 25px;
+}
+#left_2_314{
+	display: none;
+}
+</style>
+<body>
+<div class="sec_left_314">
+	<div id="cl_314">
+		<button class="active_314">国内</button>
+		<button> 国外</button>
+	</div>
+	<div id="js_1_314">
+		<div id="left_1_314">
+			<div>
+				国内
+			</div>
+		</div>
+		<div id="left_2_314">
+			<div>
+				国外
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var oDiv1=document.getElementById('js_1_314');
+	var oDiv2=document.getElementById('cl_314');
+	var aCh=oDiv1.getElementsByTagName('div');
+	var aBtn=oDiv2.getElementsByTagName('button');
+	for (var i = 0; i < aBtn.length; i++) {
+			aBtn[i].index=i;
+			aBtn[i].onmouseover=function(){
+			for (var i = 0; i < aBtn.length; i++) {
+				aBtn[i].className='';
+				aCh[i].style.display='none';
+			}
+			this.className='active_314';
+			aCh[this.index].style.display='block';
+		};
+	}
+</script>
+</body>
+</html>
