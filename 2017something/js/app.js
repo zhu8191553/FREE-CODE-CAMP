@@ -1,4 +1,27 @@
-window.onload= function() {
+function bbimg(o){ 
+	var zoom=parseInt(o.style.zoom, 10)||100;
+	zoom+=event.wheelDelta/12;
+	if (zoom>0) o.style.zoom=zoom+'%';
+	return false;
+}
+window.onload = function() {
+	//走马灯开始
+	var zmdspeed=2;
+	var tab=document.getElementById("demo_314");
+	var tab1=document.getElementById("demo1_314");
+	var tab2=document.getElementById("demo2_314");
+	tab2.innerHTML=tab1.innerHTML;
+	function Marquee(){
+	if(tab2.offsetWidth-tab.scrollLeft<=0)
+	tab.scrollLeft-=tab1.offsetWidth
+	else{
+	tab.scrollLeft++;
+	}
+	}
+	var MyMar=setInterval(Marquee,zmdspeed);
+	tab.onmouseover=function() {clearInterval(MyMar)};
+	tab.onmouseout=function() {MyMar=setInterval(Marquee,zmdspeed)};
+	//走马灯结束
 
 	var oDiv1=document.getElementById('js_1_314');
 	var oDiv2=document.getElementById('cl_314');
@@ -120,5 +143,4 @@ window.onload= function() {
 			}
 		},10);
 	}
-
 }
