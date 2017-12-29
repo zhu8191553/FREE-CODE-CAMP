@@ -1,0 +1,258 @@
+*{ padding:0; margin:0; list-style:none; border:0;}
+body {
+	background: url(../images/bg.jpg);
+	background-size: cover;
+}
+.jumbotron {
+	padding: 0;
+	margin: 0;
+}
+.jumbotron img {
+	width: 100%;
+}
+.navbar-header a {
+	color: #333;
+	font-size: 14px;
+}
+.navbar-header a:hover{
+	color: #242323;
+}
+#section1_314 {
+    background-color: #2464b5;
+	width: 100%;
+}
+#section1_nav_314 {
+	font-size: 18px;
+	line-height: 30px;
+	height: 30px;
+}
+#section1_nav_314 a {
+	color: #fff;
+	width: 150px;
+	text-align: center;
+}
+#section1_nav_314 a:hover {
+	background: none;
+	color: #00aeff;
+	transition: .5s;
+}
+.section1_btn_314 {
+	margin: 10px;
+	font-size: 22px;
+}
+.carousel-inner_314 {
+	margin-top: 5px;
+}
+.section2_314 {
+	color:  #2464b5;
+	margin-bottom: 20px;
+}
+.section2_head_314 {
+	padding-left: 50px;
+	border-left: #2464b5 solid 5px;
+	margin-bottom: 15px;
+}
+.section2_314 a{
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+}
+.hh_312 div {
+	width: 500px;
+	margin-left: 10px;
+}
+.section2_314 a img:hover {
+	opacity: .8;
+	transform:scale(1.03);
+	transition: .7s;
+}
+#footer_314  {
+	height: 60px;
+	background-color: #2464b5;
+	color: #fff;
+}
+.clear {clear:both; height: 0; line-height: 0; font-size: 0}
+#footer_314 p {
+	text-align: center;
+	line-height: 50px;
+}
+#time_314 {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	color: #fff;
+	font-size: 20px;
+}
+.thumbnail {
+	overflow: hidden;
+	padding: 0;
+}
+.all_314{ width: 1000px; height: 400px; border: 1px solid #2D2D2D; margin: 20px auto; position: relative; }
+.screen_314{
+	width:1000px;
+	height:400px;
+	 overflow:hidden; 
+	position:relative;
+}
+.screen_314 li{ width:1000px; height:400px; overflow:hidden; float:left;}
+.screen_314 ul{ position:absolute; left:0; top:0px; width:3000px;}
+.all_314 ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+.all_314 ol li{ float: left; width: 20px; height: 20px; background: #fff;  margin-left: 5px; cursor: pointer; font-size: 10px; font-family: Verdana; line-height: 20px; border-radius: 20px; }
+.all_314 ol li.current{ background:#2464b5;color: white;border: 2px solid #fff; line-height: 16px;}
+.sec_left_314{
+	height: 300px;
+	width: 1000px;
+	background: #2464b5;
+	color: white;
+	padding: 10px;
+}
+.sec_left_314{
+	width:1030px;
+}
+#cl_314 {
+	width: 300px;
+    margin: 0 auto;
+}
+#cl_314 button{
+border: none;
+float: left;
+color: white;
+font-size: 20px;
+height: 40px;
+line-height: 40px;
+cursor: pointer;
+ background: gray;
+ width: 120px;
+ margin-right: 20px;
+}
+#cl_314 .active_314{
+	background-color: #fff;
+	color: #2464b5;
+}
+#left_1_314 a,
+#left_2_314 a{
+	color: white;
+	text-decoration: none;
+}
+#left_1_314 a:hover,
+#left_2_314 a:hover
+{
+	color:#ED6300;
+	border-bottom: solid 1px #ED6300;
+}
+
+
+#left_1_314,
+#left_2_314{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 55px;
+	left: 40px;
+	line-height: 25px;
+}
+#left_2_314{
+	display: none;
+}
+#left_2_314 img,
+#left_1_314 img {
+	width: 150px;
+	height: 160px;
+	margin-right: 40px;
+	border-radius: 10px;
+}
+#left_2_314 img:hover,
+#left_1_314 img:hover {
+	transition: 1s;
+	transform:scale(1.5,1.5); 
+}
+.fuwu_jumu_314 img {
+	width: 100%;
+}
+.fuwu_jumu_314 {
+	margin-bottom: 20px;
+}
+.fuwu_panel_314 {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.hh_314 img{
+	height: 180px;
+}
+.shangpin_row_314 .thumbnail{
+	padding: 10px;
+}
+.zixun_panel_314 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.zixun_panel_314 img {
+	width: 970px
+}
+.zixun_panel1_314 {
+	position: relative;
+}
+.timetime_314 {
+	position: absolute;
+	left: -170px;
+	font-size: 30px；
+}
+.zixun_article_314 {
+	width: 1000px;
+	margin: 0 auto;
+}
+#demo_314 {
+background: #FFF;
+overflow:hidden;
+margin: 0 auto;
+width: 1030px;
+border: 2px solid #2464b5;
+}
+#indemo_314 {
+float: left;
+width: 800%;
+}
+#demo1_314 {
+float: left;
+}
+#demo2_314 {
+float: left;
+}
+#demo2_314 img,
+#demo1_314 img {
+	height: 60px;
+	width: 110px;
+	border-left: 1px solid #2464b5;
+}
+.zoom_314 {
+	overflow: hidden;
+	height: 300px;
+	width: 1030px;
+	border: 1px solid #242323;
+	margin: 0 auto 20px auto;
+}
+.zoom_314 img {
+	margin: 10px;
+	height: 90px;
+	width: 180px;
+	min-height: 90px;
+	min-width: 180px;
+}
+
+.home_jumu_312 img{
+	width: 1000px;
+	height: 130px;
+	margin-top: 20px;
+}
+.home_jumu_312 {
+	width: 1000px;
+	margin: 0 auto;
+}
+.hengheng_312 div {
+	width: 245px;
+	margin-left: 10px;
+}
+.hengheng_312 {
+
+}
