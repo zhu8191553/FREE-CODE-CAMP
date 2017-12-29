@@ -91,8 +91,6 @@ window.onload = function() {
 	timer = setInterval(autoplay,3000);   // 每隔3s 调用一次 autoplay
 	function autoplay() {
 		key++;   // key == 1  先 ++
-		console.log( ulLis.length,"key",key)
-		console.log(key); //  不能超过5
 		if(key > ulLis.length -2)
 		{
 		   // alert('停下');
