@@ -1,9 +1,9 @@
 window.onload = function() {
 	//走马灯开始
 	var zmdspeed=2;
-	var tab=document.getElementById("demo_314");
-	var tab1=document.getElementById("demo1_314");
-	var tab2=document.getElementById("demo2_314");
+	var tab=document.getElementById("demo_312");
+	var tab1=document.getElementById("demo1_312");
+	var tab2=document.getElementById("demo2_312");
 	tab2.innerHTML=tab1.innerHTML;
 	function Marquee(){
 	if(tab2.offsetWidth-tab.scrollLeft<=0)
@@ -17,8 +17,8 @@ window.onload = function() {
 	tab.onmouseout=function() {MyMar=setInterval(Marquee,zmdspeed)};
 	//走马灯结束
 
-	var oDiv1=document.getElementById('js_1_314');
-	var oDiv2=document.getElementById('cl_314');
+	var oDiv1=document.getElementById('js_1_312');
+	var oDiv2=document.getElementById('cl_312');
 	var aCh=oDiv1.getElementsByTagName('div');
 	var aBtn=oDiv2.getElementsByTagName('button');
 	for (var i = 0; i < aBtn.length; i++) {
@@ -28,7 +28,7 @@ window.onload = function() {
 				aBtn[i].className='';
 				aCh[i].style.display='none';
 			}
-			this.className='active_314';
+			this.className='active_312';
 			aCh[this.index].style.display='block';
 		};
 	}
@@ -48,12 +48,12 @@ window.onload = function() {
 		var oDate=new Date();
 		
 		var str=toDou(oDate.getHours())+':'+toDou(oDate.getMinutes())+':'+toDou(oDate.getSeconds());
-		document.getElementById('time_314').innerHTML = str
+		document.getElementById('time_312').innerHTML = str
 	}
 	setInterval(tick, 1000);
 	tick();
 	//time end
-	var box  = document.getElementById("all_314");  //   获得大盒子
+	var box  = document.getElementById("all_312");  //   获得大盒子
 	var ul = box.children[0].children[0];  // 获取ul
 	var ulLis = ul.children;  //  ul 里面的所有  li
 	// 复习：  cloneNode()     克隆节点       追加a.appendChild(b)  把b 放到a 的最后面
